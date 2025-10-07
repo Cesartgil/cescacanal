@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesca Canal | Creadora Sensorial de Espacios Saludables</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos personalizados para el tema orgánico */
+        :root {
+            --color-primary: #38a169; /* Verde Salvia */
+            --color-secondary: #fefcbf; /* Amarillo muy pálido */
+            --color-accent: #b7791f; /* Dorado sutil */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc; /* Fondo Gris muy claro */
+        }
+        .active-tab {
+            color: var(--color-primary);
+            border-bottom-width: 3px;
+            border-color: var(--color-primary);
+            font-weight: 600;
+        }
+        .tab-button {
+            transition: all 0.2s;
+        }
+        .tab-button:hover {
+            color: var(--color-primary);
+        }
+        /* Estilos específicos para la lista del método HAVITAR */
+        .havitar-list > div {
+            border-left: 4px solid var(--color-accent);
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+            background-color: #fff9e6; /* Fondo suave para la lista */
+            border-radius: 0.5rem;
+            padding: 1rem;
+        }
+        .focus\:ring-\[\--color-primary\]:focus {
+            --tw-ring-opacity: 1;
+            --tw-ring-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(56, 161, 105, 0.5); /* Anillo personalizado */
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <div class="max-w-4xl mx-auto p-4 md:p-8">
+
+        <!-- Banner Principal -->
+        <header class="text-center mb-8 p-6 bg-white shadow-lg rounded-xl">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-2">CESCA CANAL</h1>
+            <p class="text-2xl text-[var(--color-primary)] font-light tracking-wider">Biohabitabilidad y Diseño Sensorial</p>
+        </header>
+
+        <!-- Navegación de Pestañas -->
+        <nav class="bg-white shadow-md rounded-xl mb-6 p-2">
+            <div class="flex flex-wrap justify-around space-x-2 md:space-x-4 text-sm md:text-base border-b-2 border-gray-100">
+
+                <button id="tab-btn-1" onclick="showTab('tab1')" class="tab-button py-3 px-2 md:px-4 text-gray-500 active-tab">¿QUIÉN SOY?</button>
+                <button id="tab-btn-2" onclick="showTab('tab2')" class="tab-button py-3 px-2 md:px-4 text-gray-500">MÉTODO HAVITAR</button>
+                <button id="tab-btn-3" onclick="showTab('tab3')" class="tab-button py-3 px-2 md:px-4 text-gray-500">BENEFICIOS INMOBILIARIA</button>
+                <button id="tab-btn-4" onclick="showTab('tab4')" class="tab-button py-3 px-2 md:px-4 text-gray-500">BENEFICIOS CLIENTES</button>
+                <button id="tab-btn-5" onclick="showTab('tab5')" class="tab-button py-3 px-2 md:px-4 text-gray-500">CONTACTO</button>
+
+            </div>
+        </nav>
+
+        <!-- Contenedor de Contenido de Pestañas -->
+        <main id="tab-content-container" class="bg-white p-6 md:p-10 shadow-lg rounded-xl">
+
+            <!-- Pestaña 1: ¿QUIÉN SOY? -->
+            <div id="tab1" class="tab-content">
+                <h2 class="text-3xl font-bold text-gray-700 mb-4">CESCA CANAL <span class="text-[var(--color-primary)]">Biohabitabilidad</span></h2>
+                
+                <p class="mb-4 text-gray-600">
+                    Soy fruto de mi historia, de transformaciones personales que me han enseñado a vivir desde **lo esencial**. De ahí nace mi mirada: **sensible, creativa y humana**.
+                </p>
+
+                <!-- MARCADOR DE IMAGEN: Reemplaza esta URL con tu foto o un diseño de interior -->
+                <img src="https://placehold.co/800x450/38a169/ffffff?text=Tu+Foto+o+Diseño+de+Interior" alt="Imagen representativa de la interiorista o diseño de interiores biohabitables" class="w-full h-auto rounded-xl shadow-md mb-6 object-cover">
+                
+                <p class="mb-6 text-gray-600">
+                    Acompaño a las personas en el proceso de convertir una propiedad en un **hogar vivo**: espacios vitales y armónicos, creados a partir de **materiales orgánicos**, la sabiduría de los **oficios artesanos** y las **experiencias sensoriales**. Mi propósito es guiar a tus clientes para que su compra sea también el inicio de una vida **auténtica, plena y consciente**.
+                </p>
+
+                <h3 class="text-xl font-semibold text-gray-700 mt-8 mb-4 border-l-4 border-[var(--color-primary)] pl-3">
+                    Creadora sensorial de espacios saludables Biohabitabilidad
+                </h3>
+                
+                <p class="text-lg font-bold text-[var(--color-accent)] mb-4">EL SERVICIO EXCLUSIVO PARA SUS CLIENTES</p>
+                
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <p class="mb-3 text-gray-700">
+                        Al elegir tu inmobiliaria, sus clientes no solo adquieren una propiedad, reciben el acompañamiento de una **interiorista sensorial** especializada en reformas y en el arte de habitar lo esencial.
+                    </p>
+                    <p class="font-medium text-gray-800">
+                        Un servicio que transforma el proceso de compra en una experiencia única:
+                    </p>
+                    <ul class="list-disc list-inside space-y-2 mt-3 text-gray-600">
+                        <li>Asesoría personalizada en reformas saludables.</li>
+                        <li>Selección y diseño exclusivo de materiales orgánicos y sustentables.</li>
+                        <li>Integración de la artesanía como valor esencial, único, con excelencia y cultura.</li>
+                        <li>Diseño de espacios desde la arquitectura sensorial (luz, texturas, aromas, acústica).</li>
+                        <li>Creación de hogares vivos, llenos de armonía y Vida.</li>
+                        <li>Facilitadora ambiental para la mejora del bienestar y biohabitabilidad.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Pestaña 2: Método haVitar -->
+            <div id="tab2" class="tab-content hidden">
+                <h2 class="text-3xl font-bold text-gray-700 mb-2">Método haVitar <span class="text-[var(--color-primary)]">(con V de Vida)</span></h2>
+                <h3 class="text-xl text-[var(--color-accent)] font-semibold mb-6">Un proceso diseñado para que sus clientes se sientan seguros, inspirados y acompañados en cada paso:</h3>
+
+                <!-- MARCADOR DE IMAGEN: Reemplaza esta URL con un gráfico o esquema de tu método -->
+                <img src="https://placehold.co/800x300/b7791f/ffffff?text=Esquema+del+Método+HAVITAR" alt="Esquema visual del proceso del método HAVITAR" class="w-full h-auto rounded-xl shadow-md mb-8 object-cover">
+                
+                <div class="havitar-list space-y-4">
+                    <div>
+                        <span class="text-xl font-bold text-[var(--color-accent)] mr-2">H – Huella:</span>
+                        <span class="text-gray-700">descubrir la esencia de quienes van a habitar el espacio.</span>
+                    </div>
+                    <div>
+                        <span class="text-xl font-bold text-[var(--color-accent)] mr-2">A – Armonía:</span>
+                        <span class="text-gray-700">diseñar equilibrio entre función, estética y bienestar.</span>
+                    </div>
+                    <div>
+                        <span class="text-xl font-bold text-[var(--color-accent)] mr-2">V – Vida:</span>
+                        <span class="text-gray-700">elegir materiales orgánicos que aporten salud y vitalidad.</span>
+                    </div>
+                    <div>
+                        <span class="text-xl font-bold text-[var(--color-accent)] mr-2">I – Inspiración:</span>
+                        <span class="text-gray-700">integrar la artesanía como alma y carácter único del hogar.</span>
+                    </div>
+                    <div>
+                        <span class="text-xl font-bold text-[var(--color-accent)] mr-2">T – Transformación:</span>
+                        <span class="text-gray-700">activar la sensorialidad —luz, texturas, aromas, sonidos.</span>
+                    </div>
+                    <div>
+                        <span class="text-xl font-bold text-[var(--color-accent)] mr-2">A – Amor:</span>
+                        <span class="text-gray-700">crear un hogar auténtico que enamore y se sienta propio.</span>
+                    </div>
+                    <div>
+                        <span class="text-xl font-bold text-[var(--color-accent)] mr-2">R – Resonancia:</span>
+                        <span class="text-gray-700">lograr que la experiencia sea vital, auténtica, plena y consciente.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pestaña 3: Beneficios para la inmobiliaria -->
+            <div id="tab3" class="tab-content hidden">
+                <h2 class="text-3xl font-bold text-gray-700 mb-6">Beneficios para la inmobiliaria</h2>
+                
+                <ul class="space-y-4 text-gray-700 text-lg">
+                    <li class="flex items-start">
+                        <span class="text-2xl text-[var(--color-primary)] mr-3">🌱</span>
+                        <span>Ofrecer un **valor añadido exclusivo** a sus clientes.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-2xl text-[var(--color-primary)] mr-3">⭐</span>
+                        <span>**Diferenciarte de la competencia**, con un servicio desde la excelencia, único.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-2xl text-[var(--color-primary)] mr-3">🤝</span>
+                        <span>Generar **confianza**: tus clientes se sienten acompañados en todo el proceso, más allá de la compra.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-2xl text-[var(--color-primary)] mr-3">🚀</span>
+                        <span>Potenciar la imagen de tu marca inmobiliaria como **innovadora, consciente y premium**.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-2xl text-[var(--color-primary)] mr-3">💖</span>
+                        <span>**Fidelizar**: clientes que recomiendan y regresan.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Pestaña 4: Beneficios para los clientes -->
+            <div id="tab4" class="tab-content hidden">
+                <h2 class="text-3xl font-bold text-gray-700 mb-6">Beneficios para los clientes de su inmobiliaria</h2>
+                
+                <ul class="space-y-4 text-gray-700 text-lg">
+                    <li class="flex items-start">
+                        <span class="text-2xl text-[var(--color-accent)] mr-3">✅</span>
+                        <span>**Acompañamiento experto** en la transformación de su nueva propiedad.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-2xl text-[var(--color-accent)] mr-3">🛡️</span>
+                        <span>**Seguridad** al elegir materiales y soluciones saludables.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-2xl text-[var(--color-accent)] mr-3">🏡</span>
+                        <span>**Hogares con vitalidad y armonía**, pensados para su bienestar.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-2xl text-[var(--color-accent)] mr-3">🧘</span>
+                        <span>**Confianza y calma** en un proceso que normalmente genera dudas.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-2xl text-[var(--color-accent)] mr-3">🗝️</span>
+                        <span>Un **hogar con identidad propia**, que refleja quiénes son y cómo quieren vivir.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Pestaña 5: Contacto -->
+            <div id="tab5" class="tab-content hidden">
+                <h2 class="text-3xl font-bold text-gray-700 mb-6">Contacto y Consultas</h2>
+                
+                <p class="text-lg mb-6 text-gray-600">
+                    Utiliza el siguiente formulario o los datos de contacto directos para iniciar el camino hacia tu hogar auténtico, pleno y consciente.
+                </p>
+                
+                <!-- Contact Info -->
+                <div class="space-y-4 mb-8">
+                    <div class="flex items-center text-gray-800 text-xl font-semibold">
+                        <!-- Icono de Teléfono (Emoji) -->
+                        <span class="text-2xl text-[var(--color-primary)] mr-3">📞</span>
+                        <span>Teléfono: <a href="tel:+34647008374" class="text-[var(--color-accent)] hover:underline">+34 647 00 83 74</a></span>
+                    </div>
+                    <div class="flex items-center text-gray-800 text-xl font-semibold">
+                        <!-- Icono de Email (Emoji) -->
+                        <span class="text-2xl text-[var(--color-primary)] mr-3">✉️</span>
+                        <span>Email: <a href="mailto:cesca1canal@gmail.com" class="text-[var(--color-accent)] hover:underline">cesca1canal@gmail.com</a></span>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="space-y-4 bg-gray-50 p-6 rounded-xl shadow-inner border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-gray-700">Envíanos un Mensaje</h3>
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nombre Completo</label>
+                        <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-\[\--color-primary\] focus:border-\[\--color-primary\]" placeholder="Tu nombre">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-\[\--color-primary\] focus:border-\[\--color-primary\]" placeholder="tu.email@ejemplo.com">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mensaje o Consulta</label>
+                        <textarea id="message" name="message" rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-\[\--color-primary\] focus:border-\[\--color-primary\]" placeholder="¿Cómo te puedo ayudar con tu espacio?"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-[var(--color-primary)] text-white py-3 px-4 rounded-lg font-bold hover:bg-green-700 transition duration-200 shadow-md">
+                        Enviar Consulta
+                    </button>
+                    <!-- Nota: La funcionalidad del formulario requiere un servicio de backend -->
+                    <p class="text-xs text-gray-500 pt-2 text-center">
+                        *Nota: Este formulario es estático. Para recibir mensajes, necesitarías conectarlo a un servicio de backend (como un script de correo o una herramienta de formularios).
+                    </p>
+                </form>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Script de Pestañas (Tabs) -->
+    <script>
+        /**
+         * Función para mostrar el contenido de la pestaña seleccionada
+         * y actualizar el estilo del botón activo.
+         */
+        function showTab(tabId) {
+            // 1. Ocultar todos los contenidos de las pestañas
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => {
+                content.classList.add('hidden');
+            });
+
+            // 2. Desactivar todos los botones
+            const buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(button => {
+                button.classList.remove('active-tab');
+            });
+
+            // 3. Mostrar el contenido de la pestaña seleccionada
+            const activeContent = document.getElementById(tabId);
+            if (activeContent) {
+                activeContent.classList.remove('hidden');
+            }
+
+            // 4. Activar el botón correspondiente
+            // El ID del botón se determina del sufijo de la pestaña (ej: 'tab5' -> 'btn-5')
+            const btnNumber = tabId.slice(-1);
+            const activeBtn = document.getElementById(`tab-btn-${btnNumber}`);
+            if (activeBtn) {
+                activeBtn.classList.add('active-tab');
+            }
+        }
+
+        // Mostrar la primera pestaña al cargar la página
+        window.onload = function() {
+            showTab('tab1');
+        }
+    </script>
+
+</body>
+</html>
